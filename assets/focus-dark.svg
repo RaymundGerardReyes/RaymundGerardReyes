@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
+  <defs>
+    <style>
+      .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .section-tag { font-size: 11px; fill: #777777; letter-spacing: 1.5px; }
+      .meta { font-size: 10px; fill: #666666; letter-spacing: 1px; }
+      .item-num { font-size: 11px; fill: #888888; font-weight: 500; }
+      .item-title { font-size: 14.5px; font-weight: 600; fill: #f0f0f0; letter-spacing: 0.2px; }
+      .item-desc { font-size: 10.5px; fill: #666666; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- Canvas Surface -->
+  <rect width="920" height="340" fill="#0d1117" />
+  <rect x="1" y="1" width="918" height="338" fill="#121212" rx="6" stroke="#262626" stroke-width="1.2" />
+
+  <!-- Section Header -->
+  <g transform="translate(54, 40)">
+    <text x="0" y="0" class="mono section-tag">01 // DOMAIN SPECIALIZATION</text>
+    <text x="812" y="0" class="mono meta" text-anchor="end">ENGINEERING SPECIFICATION · ARCHITECTURE</text>
+    <line x1="0" y1="12" x2="812" y2="12" stroke="#222222" stroke-width="1" />
+  </g>
+
+  <!-- Left Computational Rail Line -->
+  <line x1="54" y1="80" x2="54" y2="290" stroke="#262626" stroke-width="1.5" />
+
+  <!-- Node Stations on the Rail -->
+  <circle cx="54" cy="80" r="2.5" fill="#3a3a3a" />
+  <circle cx="54" cy="122" r="2.5" fill="#3a3a3a" />
+  <circle cx="54" cy="164" r="2.5" fill="#3a3a3a" />
+  <circle cx="54" cy="206" r="2.5" fill="#3a3a3a" />
+  <circle cx="54" cy="248" r="2.5" fill="#3a3a3a" />
+  <circle cx="54" cy="290" r="2.5" fill="#3a3a3a" />
+
+  <!-- Discrete Signal Traveling Down the Focus Rail -->
+  <g>
+    <circle cx="54" cy="80" r="6" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.25">
+      <animate attributeName="cy" values="80; 80; 122; 122; 164; 164; 206; 206; 248; 248; 290; 290; 80"
+               keyTimes="0; 0.12; 0.18; 0.30; 0.36; 0.48; 0.54; 0.66; 0.72; 0.84; 0.90; 0.96; 1"
+               dur="14s" repeatCount="indefinite" calcMode="linear" />
+      <animate attributeName="r" values="5; 7.5; 5" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="54" cy="80" r="3.5" fill="#ffffff">
+      <animate attributeName="cy" values="80; 80; 122; 122; 164; 164; 206; 206; 248; 248; 290; 290; 80"
+               keyTimes="0; 0.12; 0.18; 0.30; 0.36; 0.48; 0.54; 0.66; 0.72; 0.84; 0.90; 0.96; 1"
+               dur="14s" repeatCount="indefinite" calcMode="linear" />
+    </circle>
+  </g>
+
+  <!-- List Items -->
+  <!-- 01 -->
+  <g transform="translate(80, 84)">
+    <text x="0" y="0" class="mono item-num">01</text>
+    <text x="32" y="0" class="sans item-title">AI-Powered Systems</text>
+    <text x="786" y="0" class="mono item-desc" text-anchor="end">VISION · DEEP LEARNING · AGENTIC RUNTIMES</text>
+    <line x1="0" y1="18" x2="786" y2="18" stroke="#1c1c1c" stroke-width="1" />
+  </g>
+
+  <!-- 02 -->
+  <g transform="translate(80, 126)">
+    <text x="0" y="0" class="mono item-num">02</text>
+    <text x="32" y="0" class="sans item-title">Secure Backend Architectures</text>
+    <text x="786" y="0" class="mono item-desc" text-anchor="end">ZERO-TRUST · DISTRIBUTED SERVICES · TRANSACTIONAL RLS</text>
+    <line x1="0" y1="18" x2="786" y2="18" stroke="#1c1c1c" stroke-width="1" />
+  </g>
+
+  <!-- 03 -->
+  <g transform="translate(80, 168)">
+    <text x="0" y="0" class="mono item-num">03</text>
+    <text x="32" y="0" class="sans item-title">Full-Stack Enterprise Applications</text>
+    <text x="786" y="0" class="mono item-desc" text-anchor="end">REACT · NEXT.JS · TYPESCRIPT · MODULAR MONOLITHS</text>
+    <line x1="0" y1="18" x2="786" y2="18" stroke="#1c1c1c" stroke-width="1" />
+  </g>
+
+  <!-- 04 -->
+  <g transform="translate(80, 210)">
+    <text x="0" y="0" class="mono item-num">04</text>
+    <text x="32" y="0" class="sans item-title">Developer Automation &amp; Tooling</text>
+    <text x="786" y="0" class="mono item-desc" text-anchor="end">WORKFLOW ENGINES · CI/CD PIPELINES · CODE GENERATION</text>
+    <line x1="0" y1="18" x2="786" y2="18" stroke="#1c1c1c" stroke-width="1" />
+  </g>
+
+  <!-- 05 -->
+  <g transform="translate(80, 252)">
+    <text x="0" y="0" class="mono item-num">05</text>
+    <text x="32" y="0" class="sans item-title">Machine Learning Workflows</text>
+    <text x="786" y="0" class="mono item-desc" text-anchor="end">DATASET CURATION · EVALUATION SUITES · INFERENCE SERVING</text>
+    <line x1="0" y1="18" x2="786" y2="18" stroke="#1c1c1c" stroke-width="1" />
+  </g>
+
+  <!-- 06 -->
+  <g transform="translate(80, 294)">
+    <text x="0" y="0" class="mono item-num">06</text>
+    <text x="32" y="0" class="sans item-title">Security-Aware Application Design</text>
+    <text x="786" y="0" class="mono item-desc" text-anchor="end">WEBAUTHN · AUDIT TRAILS · COMPLIANCE ENFORCEMENT</text>
+  </g>
+</svg>
