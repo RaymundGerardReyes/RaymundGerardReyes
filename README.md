@@ -1,20 +1,24 @@
-<p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="ARDS — AI Engineer / System Builder" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
+  <img src="./assets/hero-dark.svg" width="100%" alt="ARDS — AI Engineer / System Builder">
+</picture>
 
 <div align="center">
 
-[![Release](https://img.shields.io/badge/RELEASE-v3.0.0-000000?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RaymundGerardReyes/RaymundGerardReyes/releases/tag/v3.0.0)
-[![Changelog](https://img.shields.io/badge/CHANGELOG-v3.0.0-000000?style=for-the-badge&logo=markdown&logoColor=white)](./CHANGELOG.md)
-[![Spec](https://img.shields.io/badge/SPEC-2026.02-000000?style=for-the-badge)](./VERSION)
+[![Release](https://img.shields.io/badge/RELEASE-v3.1.0-000000?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RaymundGerardReyes/RaymundGerardReyes/releases/tag/v3.1.0)
+[![Changelog](https://img.shields.io/badge/CHANGELOG-v3.1.0-000000?style=for-the-badge&logo=markdown&logoColor=white)](./CHANGELOG.md)
+[![Theme](https://img.shields.io/badge/THEME-ADAPTIVE%20CONTAINERS-000000?style=for-the-badge)](./VERSION)
 
 </div>
 
 ## 01 / ENGINEERING FOCUS
 
-<p align="center">
-  <img src="./assets/focus.svg" width="100%" alt="Engineering Focus Manifesto" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/focus-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/focus-light.svg">
+  <img src="./assets/focus-dark.svg" width="100%" alt="Engineering Focus Manifesto">
+</picture>
 
 ## 02 / TECHNOLOGY
 
@@ -31,9 +35,11 @@ A static, production-verified system inventory categorized by architectural laye
 
 ## 03 / ENGINEERING ACTIVITY
 
-<p align="center">
-  <img src="./assets/activity.svg" width="100%" alt="Engineering Activity Telemetry" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
+  <img src="./assets/activity-dark.svg" width="100%" alt="Engineering Activity Telemetry">
+</picture>
 
 > Public source code, system architectures, and verifiable implementations are directly indexed across the repositories above.
 
@@ -62,5 +68,5 @@ A static, production-verified system inventory categorized by architectural laye
 ---
 
 <div align="center">
-  <sub>ARDS &middot; RAYMUND GERARD REYES &middot; RELEASE v3.0.0 &middot; SPECIFICATION 2026.02 &middot; MONOCHROME COMPUTATIONAL MINIMALISM</sub>
+  <sub>ARDS &middot; RAYMUND GERARD REYES &middot; RELEASE v3.1.0 &middot; THEME-ADAPTIVE COMPUTATIONAL MINIMALISM</sub>
 </div>

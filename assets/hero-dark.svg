@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="100%">
+  <defs>
+    <style>
+      .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      
+      .sys-header { font-size: 10px; fill: #ffffff; letter-spacing: 2px; }
+      .boot-text  { font-size: 10px; fill: #ffffff; letter-spacing: 1.5px; }
+      .title      { font-size: 44px; font-weight: 800; fill: #ffffff; letter-spacing: 5px; }
+      .role       { font-size: 12.5px; font-weight: 600; fill: #ffffff; letter-spacing: 3px; }
+      .sub        { font-size: 10.5px; fill: #ffffff; opacity: 0.55; letter-spacing: 1.5px; }
+      .node-label { font-size: 8.5px; fill: #ffffff; opacity: 0.45; letter-spacing: 1px; }
+      .term-text  { font-size: 9.5px; fill: #ffffff; opacity: 0.75; letter-spacing: 1.5px; }
+    </style>
+  </defs>
+
+  <!-- Canvas: Pure 80% Black Canvas with Fine 1px Border Panel -->
+  <rect width="920" height="440" fill="#000000" />
+  <rect x="1" y="1" width="918" height="438" fill="#050505" stroke="#141414" stroke-width="1.2" rx="4" />
+
+  <!-- Technical Corner Registration Ticks (Precision Engineering Layout) -->
+  <path d="M 12 24 L 24 24 M 24 12 L 24 24" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+  <path d="M 908 24 L 896 24 M 896 12 L 896 24" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+  <path d="M 12 416 L 24 416 M 24 428 L 24 416" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+  <path d="M 908 416 L 896 416 M 896 428 L 896 416" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+
+  <!-- Top System Telemetry Bar -->
+  <g transform="translate(48, 38)">
+    <!-- Phase 1: Boot Sequence Text (0s to 3.5s), then Fades to Persistent Status -->
+    <g>
+      <text x="0" y="0" class="mono boot-text">
+        INIT: RUNTIME v3.0.0 [OK] · TENSORS [OK] · PIPELINES [OK] · ZERO-TRUST [OK]
+        <animate attributeName="opacity" values="0; 1; 1; 0; 0" keyTimes="0; 0.1; 0.25; 0.30; 1" dur="12s" repeatCount="indefinite" />
+      </text>
+      <text x="0" y="0" class="mono sys-header">
+        SYS.RELEASE // v3.0.0 · SPEC 2026.02 · TOPOLOGY ONLINE
+        <animate attributeName="opacity" values="0; 0; 0.3; 1; 1" keyTimes="0; 0.28; 0.32; 0.40; 1" dur="12s" repeatCount="indefinite" />
+      </text>
+    </g>
+
+    <g transform="translate(824, -4)">
+      <!-- Beacon Indicator -->
+      <circle cx="0" cy="0" r="3" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2; 1; 0.2" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.3">
+        <animate attributeName="r" values="3; 9; 3" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.4; 0; 0.4" dur="3s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <line x1="0" y1="12" x2="824" y2="12" stroke="#1c1c1c" stroke-width="1" />
+  </g>
+
+  <!-- Identity Block -->
+  <g transform="translate(48, 88)">
+    <text x="0" y="0" class="sans title">ARDS</text>
+    <text x="0" y="24" class="mono role">AI ENGINEER / SYSTEM BUILDER</text>
+    <text x="0" y="44" class="mono sub">COMPUTATIONAL SYSTEMS · DISTRIBUTED ARCHITECTURE · MACHINE LEARNING</text>
+  </g>
+
+  <!-- Subtle Computational Heartbeat Line (Machine Vitality Indicator) -->
+  <g transform="translate(620, 100)" opacity="0.8">
+    <path d="M 0 0 L 70 0 L 80 -10 L 90 12 L 100 -6 L 108 4 L 115 0 L 250 0"
+          fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="14 8" opacity="0.4" />
+    <!-- Traveling Heartbeat Waveform Point -->
+    <circle cx="0" cy="0" r="2.5" fill="#ffffff">
+      <animate attributeName="cx" values="0; 250; 0" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2; 1; 0.2" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- SIGNATURE COMPUTATIONAL TOPOLOGY (NEURAL & DISTRIBUTED GRAPH)  -->
+  <!-- ============================================================== -->
+
+  <g id="computational-topology" transform="translate(48, 170)">
+    <!-- Structural Bounding Track -->
+    <line x1="0" y1="0" x2="824" y2="0" stroke="#161616" stroke-width="1" />
+    <line x1="0" y1="220" x2="824" y2="220" stroke="#161616" stroke-width="1" />
+
+    <!-- Network Layer Annotations -->
+    <text x="0" y="34" class="mono node-label">L1 // INPUT SURFACE</text>
+    <text x="0" y="104" class="mono node-label">L2 // DISTRIBUTED NODES</text>
+    <text x="0" y="174" class="mono node-label">L3 // CONVERGENCE</text>
+
+    <!-- Topological Bus Edges (Lines between nodes) -->
+    <!-- Horizontal Layer 1 Interconnect -->
+    <line x1="160" y1="30" x2="680" y2="30" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="4 4" />
+    <!-- Horizontal Layer 2 Interconnect -->
+    <line x1="240" y1="100" x2="600" y2="100" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="4 4" />
+    <!-- Horizontal Layer 3 Interconnect -->
+    <line x1="330" y1="170" x2="510" y2="170" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="4 4" />
+
+    <!-- Directed Topological Synapses (Input -> Hidden -> Output) -->
+    <line x1="160" y1="30" x2="240" y2="100" stroke="#222222" stroke-width="1" />
+    <line x1="330" y1="30" x2="240" y2="100" stroke="#222222" stroke-width="1" />
+    <line x1="330" y1="30" x2="420" y2="100" stroke="#222222" stroke-width="1" />
+    <line x1="510" y1="30" x2="420" y2="100" stroke="#222222" stroke-width="1" />
+    <line x1="510" y1="30" x2="600" y2="100" stroke="#222222" stroke-width="1" />
+    <line x1="680" y1="30" x2="600" y2="100" stroke="#222222" stroke-width="1" />
+
+    <line x1="240" y1="100" x2="330" y2="170" stroke="#222222" stroke-width="1" />
+    <line x1="420" y1="100" x2="330" y2="170" stroke="#222222" stroke-width="1" />
+    <line x1="420" y1="100" x2="510" y2="170" stroke="#222222" stroke-width="1" />
+    <line x1="600" y1="100" x2="510" y2="170" stroke="#222222" stroke-width="1" />
+
+    <line x1="330" y1="170" x2="420" y2="210" stroke="#282828" stroke-width="1.2" />
+    <line x1="510" y1="170" x2="420" y2="210" stroke="#282828" stroke-width="1.2" />
+
+    <!-- ============================================================== -->
+    <!-- PHASE 3: ACTIVE DATA PACKET SIGNALS TRAVERSING THE ARCHITECTURE -->
+    <!-- ============================================================== -->
+
+    <!-- Signal Alpha (Left Input -> Middle -> Output) -->
+    <circle r="3" fill="#ffffff">
+      <animateMotion path="M 160 30 L 240 100 L 330 170 L 420 210"
+                     begin="0s" dur="6s" repeatCount="indefinite" calcMode="linear" />
+      <animate attributeName="opacity" values="0; 1; 1; 1; 0" keyTimes="0; 0.1; 0.7; 0.95; 1" dur="6s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Signal Beta (Center Input -> Right Middle -> Convergence) -->
+    <circle r="3" fill="#ffffff">
+      <animateMotion path="M 510 30 L 420 100 L 510 170 L 420 210"
+                     begin="2s" dur="6s" repeatCount="indefinite" calcMode="linear" />
+      <animate attributeName="opacity" values="0; 1; 1; 1; 0" keyTimes="0; 0.1; 0.7; 0.95; 1" dur="6s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Signal Gamma (Right Input -> Right Middle -> Output) -->
+    <circle r="3" fill="#ffffff">
+      <animateMotion path="M 680 30 L 600 100 L 510 170 L 420 210"
+                     begin="4s" dur="6s" repeatCount="indefinite" calcMode="linear" />
+      <animate attributeName="opacity" values="0; 1; 1; 1; 0" keyTimes="0; 0.1; 0.7; 0.95; 1" dur="6s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Signal Delta (Horizontal Bus Communication) -->
+    <circle r="2.5" fill="#ffffff" opacity="0.6">
+      <animateMotion path="M 160 30 L 680 30"
+                     begin="1s" dur="8s" repeatCount="indefinite" calcMode="linear" />
+    </circle>
+
+    <!-- ============================================================== -->
+    <!-- TOPOLOGY HARDWARE NODES                                         -->
+    <!-- ============================================================== -->
+
+    <!-- Layer 1 Nodes -->
+    <g transform="translate(160, 30)">
+      <circle r="4" fill="#000000" stroke="#ffffff" stroke-width="1.2" />
+      <circle r="1.5" fill="#ffffff" />
+    </g>
+    <g transform="translate(330, 30)">
+      <circle r="4" fill="#000000" stroke="#ffffff" stroke-width="1.2" />
+      <circle r="1.5" fill="#ffffff" />
+    </g>
+    <g transform="translate(510, 30)">
+      <circle r="4" fill="#000000" stroke="#ffffff" stroke-width="1.2" />
+      <circle r="1.5" fill="#ffffff" />
+    </g>
+    <g transform="translate(680, 30)">
+      <circle r="4" fill="#000000" stroke="#ffffff" stroke-width="1.2" />
+      <circle r="1.5" fill="#ffffff" />
+    </g>
+
+    <!-- Layer 2 Nodes -->
+    <g transform="translate(240, 100)">
+      <circle r="4.5" fill="#000000" stroke="#ffffff" stroke-width="1.2" />
+      <circle r="2" fill="#ffffff" />
+    </g>
+    <g transform="translate(420, 100)">
+      <circle r="4.5" fill="#000000" stroke="#ffffff" stroke-width="1.2" />
+      <circle r="2" fill="#ffffff" />
+    </g>
+    <g transform="translate(600, 100)">
+      <circle r="4.5" fill="#000000" stroke="#ffffff" stroke-width="1.2" />
+      <circle r="2" fill="#ffffff" />
+    </g>
+
+    <!-- Layer 3 Convergence Nodes -->
+    <g transform="translate(330, 170)">
+      <circle r="5" fill="#000000" stroke="#ffffff" stroke-width="1.5" />
+      <circle r="2" fill="#ffffff" />
+    </g>
+    <g transform="translate(510, 170)">
+      <circle r="5" fill="#000000" stroke="#ffffff" stroke-width="1.5" />
+      <circle r="2" fill="#ffffff" />
+    </g>
+
+    <!-- Layer 4 Output Terminal Node -->
+    <g transform="translate(420, 210)">
+      <circle r="7" fill="#000000" stroke="#ffffff" stroke-width="1.8" />
+      <circle r="3.5" fill="#ffffff">
+        <animate attributeName="r" values="3; 4.5; 3" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <!-- Execution Terminal Status -->
+    <text x="440" y="214" class="mono term-text">PROCESS CONVERGED // EXECUTION DETERMINISTIC</text>
+  </g>
+</svg>

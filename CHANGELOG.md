@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [3.1.0] - 2026-09-29
+
+### Added
+- **Theme-Adaptive Container Illusion**: Packaged all visual components into HTML `<picture>` containers with `(prefers-color-scheme: dark)` and `(prefers-color-scheme: light)` media queries to seamlessly adapt between dark and light modes.
+- **Light Theme Twin Vectors**: Created `assets/hero-light.svg`, `assets/focus-light.svg`, and `assets/activity-light.svg` with pure white background canvases (`#ffffff` / `#fafafa`) and crisp monochrome lines/signals, preventing mismatched container borders on GitHub Light.
+- **Dark Theme Twin Vectors**: Synchronized `assets/hero-dark.svg`, `assets/focus-dark.svg`, and `assets/activity-dark.svg` matching GitHub's dark canvas.
+
+### Changed
+- Bumped system version to `3.1.0` across `VERSION`, `README.md`, and SVG telemetry headers.
+
+---
+
 ## [3.0.0] - 2026-09-29
 
 ### Added

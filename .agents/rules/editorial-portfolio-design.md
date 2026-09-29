@@ -23,3 +23,16 @@ always_on: true
      - **Phase 3 (Processing)**: Packets traverse edges.
      - **Phase 4 (Stable State)**: Calm, persistent equilibrium.
    - All animated assets must be self-hosted in `assets/` without external JS dependencies (`hero.svg`, `focus.svg`, `activity.svg`).
+
+4. **GitHub Theme Adaptation & Background Illusion**:
+   - Because GitHub blocks external CSS/HTML background modification outside the README container, SVGs must act as seamless theme containers matching GitHub's native page background colors:
+     - Dark Mode (`prefers-color-scheme: dark`): Match deep black / GitHub dark (`#0d1117` / `#000000`).
+     - Light Mode (`prefers-color-scheme: light`): Match GitHub light (`#ffffff` / `#fafafa`).
+   - All animated assets must be paired into `<picture>` containers:
+     ```html
+     <picture>
+       <source media="(prefers-color-scheme: dark)" srcset="./assets/<name>-dark.svg">
+       <source media="(prefers-color-scheme: light)" srcset="./assets/<name>-light.svg">
+       <img src="./assets/<name>-dark.svg" width="100%" alt="...">
+     </picture>
+     ```
