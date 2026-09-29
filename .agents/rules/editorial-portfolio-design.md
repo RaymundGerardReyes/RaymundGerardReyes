@@ -36,3 +36,11 @@ always_on: true
        <img src="./assets/<name>-dark.svg" width="100%" alt="...">
      </picture>
      ```
+
+5. **Identity & Title Invariants**:
+   - Developer Name: Strictly use `RAYMUND GERARD ESTACA`. Do NOT use "ARDS" or informal pseudonyms.
+   - Professional Title: Strictly use `FULL STACK AI ASSISTED DEVELOPER`.
+
+6. **SVG Animation Reliability Standards**:
+   - Base geometries must always be drawn with full base dimensions (never `width="0"` or hidden offsets) so graphics remain visible on static renderers and cached proxies.
+   - Motion must be cyclical and continuous using `repeatCount="indefinite"` with `animateMotion` and `animateTransform` rather than one-shot `fill="freeze"`.

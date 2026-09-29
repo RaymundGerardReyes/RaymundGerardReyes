@@ -6,8 +6,8 @@
       
       .sys-header { font-size: 10px; fill: #111111; letter-spacing: 2px; }
       .boot-text  { font-size: 10px; fill: #333333; letter-spacing: 1.5px; }
-      .title      { font-size: 44px; font-weight: 800; fill: #000000; letter-spacing: 5px; }
-      .role       { font-size: 12.5px; font-weight: 600; fill: #111111; letter-spacing: 3px; }
+      .title      { font-size: 29px; font-weight: 800; fill: #000000; letter-spacing: 3px; }
+      .role       { font-size: 12.5px; font-weight: 600; fill: #111111; letter-spacing: 2.5px; }
       .sub        { font-size: 10.5px; fill: #555555; letter-spacing: 1.5px; }
       .node-label { font-size: 8.5px; fill: #777777; letter-spacing: 1px; }
       .term-text  { font-size: 9.5px; fill: #444444; letter-spacing: 1.5px; }
@@ -28,11 +28,11 @@
   <g transform="translate(48, 38)">
     <g>
       <text x="0" y="0" class="mono boot-text">
-        INIT: RUNTIME v3.1.0 [OK] · TENSORS [OK] · PIPELINES [OK] · ZERO-TRUST [OK]
+        INIT: RUNTIME v3.2.0 [OK] · TENSORS [OK] · PIPELINES [OK] · ZERO-TRUST [OK]
         <animate attributeName="opacity" values="0; 1; 1; 0; 0" keyTimes="0; 0.1; 0.25; 0.30; 1" dur="12s" repeatCount="indefinite" />
       </text>
       <text x="0" y="0" class="mono sys-header">
-        SYS.RELEASE // v3.1.0 · SPEC 2026.02 · TOPOLOGY ONLINE
+        SYS.RELEASE // v3.2.0 · SPEC 2026.02 · TOPOLOGY ONLINE
         <animate attributeName="opacity" values="0; 0; 0.3; 1; 1" keyTimes="0; 0.28; 0.32; 0.40; 1" dur="12s" repeatCount="indefinite" />
       </text>
     </g>
@@ -51,9 +51,9 @@
 
   <!-- Identity Block -->
   <g transform="translate(48, 88)">
-    <text x="0" y="0" class="sans title">ARDS</text>
-    <text x="0" y="24" class="mono role">AI ENGINEER / SYSTEM BUILDER</text>
-    <text x="0" y="44" class="mono sub">COMPUTATIONAL SYSTEMS · DISTRIBUTED ARCHITECTURE · MACHINE LEARNING</text>
+    <text x="0" y="0" class="sans title">RAYMUND GERARD ESTACA</text>
+    <text x="0" y="24" class="mono role">FULL STACK AI ASSISTED DEVELOPER</text>
+    <text x="0" y="44" class="mono sub">INTELLIGENT SYSTEMS · FULL STACK ARCHITECTURE · AUTOMATION WORKFLOWS</text>
   </g>
 
   <!-- Subtle Computational Heartbeat Line -->

@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [3.2.0] - 2026-09-29
+
+### Added
+- **Substantive Continuous Activity Telemetry**: Overhauled `assets/activity-dark.svg` and `assets/activity-light.svg` with continuous traveling signal packets (`animateMotion`), expanding radar telemetry halos, sweeping scan lines, and active runtime data pulses.
+- **Defensive Rendering**: Guaranteed 100% visible base geometry across all browsers and GitHub Camo caching (eliminated zero-width bars and static freeze offsets).
+
+### Changed
+- **Identity Enforcement**: Replaced alias "ARDS" with the user's explicit real name **`RAYMUND GERARD ESTACA`** across all vector headers, metadata, alt attributes, and footers.
+- **Role Definition**: Updated title to **`FULL STACK AI ASSISTED DEVELOPER`**.
+- **Light Theme Assets**: Populated and validated complete, non-zero XML vectors for `hero-light.svg`, `focus-light.svg`, and `activity-light.svg`.
+
+---
+
 ## [3.1.0] - 2026-09-29
 
 ### Added

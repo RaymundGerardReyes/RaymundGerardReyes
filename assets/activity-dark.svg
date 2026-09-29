@@ -35,44 +35,77 @@
   <line x1="470" y1="70" x2="470" y2="248" stroke="#141414" stroke-width="1" />
 
   <!-- ============================================================== -->
-  <!-- LEFT COLUMN: ACTIVITY TRAJECTORY & METRIC GRAPH               -->
+  <!-- LEFT COLUMN: CONTINUOUS TELEMETRY TRAJECTORY & METRIC GRAPH    -->
   <!-- ============================================================== -->
 
   <g transform="translate(48, 76)">
     <text x="0" y="0" class="mono col-tag">COMMIT TRAJECTORY &amp; CADENCE</text>
     
     <!-- Background Grid Lines -->
-    <line x1="0" y1="40" x2="380" y2="40" stroke="#111111" stroke-width="1" stroke-dasharray="2 4" />
-    <line x1="0" y1="80" x2="380" y2="80" stroke="#111111" stroke-width="1" stroke-dasharray="2 4" />
-    <line x1="0" y1="120" x2="380" y2="120" stroke="#111111" stroke-width="1" />
+    <line x1="0" y1="40" x2="380" y2="40" stroke="#141414" stroke-width="1" stroke-dasharray="2 4" />
+    <line x1="0" y1="80" x2="380" y2="80" stroke="#141414" stroke-width="1" stroke-dasharray="2 4" />
+    <line x1="0" y1="120" x2="380" y2="120" stroke="#181818" stroke-width="1" />
 
-    <!-- Self-Drawing Activity Vector Curve -->
+    <!-- Vertical Drop Lines (Subtle Cadence Stems) -->
+    <line x1="45" y1="110" x2="45" y2="120" stroke="#1c1c1c" stroke-width="1" />
+    <line x1="90" y1="95" x2="90" y2="120" stroke="#1c1c1c" stroke-width="1" />
+    <line x1="135" y1="105" x2="135" y2="120" stroke="#1c1c1c" stroke-width="1" />
+    <line x1="180" y1="75" x2="180" y2="120" stroke="#1c1c1c" stroke-width="1" />
+    <line x1="225" y1="85" x2="225" y2="120" stroke="#1c1c1c" stroke-width="1" />
+    <line x1="270" y1="50" x2="270" y2="120" stroke="#1c1c1c" stroke-width="1" />
+    <line x1="315" y1="65" x2="315" y2="120" stroke="#1c1c1c" stroke-width="1" />
+    <line x1="360" y1="30" x2="360" y2="120" stroke="#1c1c1c" stroke-width="1" />
+    <line x1="380" y1="40" x2="380" y2="120" stroke="#1c1c1c" stroke-width="1" />
+
+    <!-- Persistent Baseline Vector Curve (Always Fully Drawn & Visible) -->
     <path d="M 0 115 L 45 110 L 90 95 L 135 105 L 180 75 L 225 85 L 270 50 L 315 65 L 360 30 L 380 40"
-          fill="none" stroke="#ffffff" stroke-width="1.8"
-          stroke-dasharray="500" stroke-dashoffset="500">
-      <animate attributeName="stroke-dashoffset" values="500; 0" dur="3s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" />
-    </path>
+          fill="none" stroke="#ffffff" stroke-width="1.8" />
 
-    <!-- Head Pulse Point on Trajectory Curve -->
-    <circle cx="380" cy="40" r="3" fill="#ffffff">
-      <animate attributeName="opacity" values="0; 1; 0.4; 1" keyTimes="0; 0.7; 0.85; 1" dur="4s" repeatCount="indefinite" />
+    <!-- Milestone Station Points along the Trajectory -->
+    <circle cx="45" cy="110" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="90" cy="95" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="135" cy="105" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="180" cy="75" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="225" cy="85" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="270" cy="50" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="315" cy="65" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="360" cy="30" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="380" cy="40" r="3.5" fill="#ffffff" />
+
+    <!-- Sweeping Radar Scan Line Traversing Horizontally -->
+    <line x1="0" y1="20" x2="0" y2="120" stroke="#ffffff" stroke-width="1" opacity="0.25" stroke-dasharray="2 2">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 380 0; 0 0" dur="8s" repeatCount="indefinite" />
+    </line>
+
+    <!-- Continuous Traveling Telemetry Signal Packet -->
+    <circle r="3.5" fill="#ffffff">
+      <animateMotion path="M 0 115 L 45 110 L 90 95 L 135 105 L 180 75 L 225 85 L 270 50 L 315 65 L 360 30 L 380 40"
+                     dur="5s" repeatCount="indefinite" calcMode="linear" />
+    </circle>
+    
+    <!-- Expanding Halo Pulse at Traveling Packet -->
+    <circle r="7" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.3">
+      <animateMotion path="M 0 115 L 45 110 L 90 95 L 135 105 L 180 75 L 225 85 L 270 50 L 315 65 L 360 30 L 380 40"
+                     dur="5s" repeatCount="indefinite" calcMode="linear" />
+      <animate attributeName="r" values="4; 9; 4" dur="1.66s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.4; 0.1; 0.4" dur="1.66s" repeatCount="indefinite" />
     </circle>
 
     <!-- Key Metrics Telemetry -->
     <g transform="translate(0, 148)">
       <text x="0" y="0" class="mono stat-lbl">CADENCE:</text>
-      <text x="65" y="0" class="mono stat-val">ACTIVE</text>
+      <text x="65" y="0" class="mono stat-val">CONTINUOUS</text>
       
-      <text x="140" y="0" class="mono stat-lbl">INTEGRITY:</text>
-      <text x="215" y="0" class="mono stat-val">VERIFIED</text>
+      <text x="160" y="0" class="mono stat-lbl">INTEGRITY:</text>
+      <text x="235" y="0" class="mono stat-val">VERIFIED</text>
 
-      <text x="290" y="0" class="mono stat-lbl">REPOS:</text>
-      <text x="340" y="0" class="mono stat-val">INDEXED</text>
+      <text x="310" y="0" class="mono stat-lbl">STATE:</text>
+      <text x="355" y="0" class="mono stat-val">ACTIVE</text>
     </g>
   </g>
 
   <!-- ============================================================== -->
-  <!-- RIGHT COLUMN: CORE RUNTIME DISTRIBUTION BARS                   -->
+  <!-- RIGHT COLUMN: CORE RUNTIME DISTRIBUTION BARS (ACTIVE TELEMETRY) -->
   <!-- ============================================================== -->
 
   <g transform="translate(500, 76)">
@@ -83,9 +116,12 @@
       <text x="0" y="0" class="mono bar-lbl">C# / .NET ARCHITECTURE</text>
       <text x="372" y="0" class="mono bar-pct" text-anchor="end">32%</text>
       <rect x="0" y="6" width="372" height="4" fill="#141414" rx="2" />
-      <rect x="0" y="6" width="0" height="4" fill="#ffffff" rx="2">
-        <animate attributeName="width" values="0; 120" dur="1.8s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" />
-      </rect>
+      <!-- Solid Visible Base Bar -->
+      <rect x="0" y="6" width="120" height="4" fill="#ffffff" rx="2" opacity="0.9" />
+      <!-- Continuous Signal Tick Moving along Bar -->
+      <circle cx="0" cy="8" r="2.5" fill="#ffffff">
+        <animate attributeName="cx" values="0; 120; 0" dur="4s" repeatCount="indefinite" calcMode="linear" />
+      </circle>
     </g>
 
     <!-- Bar 02: PYTHON / ML -->
@@ -93,9 +129,10 @@
       <text x="0" y="0" class="mono bar-lbl">PYTHON / PYTORCH / ML</text>
       <text x="372" y="0" class="mono bar-pct" text-anchor="end">28%</text>
       <rect x="0" y="6" width="372" height="4" fill="#141414" rx="2" />
-      <rect x="0" y="6" width="0" height="4" fill="#ffffff" rx="2">
-        <animate attributeName="width" values="0; 104" dur="2.0s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" />
-      </rect>
+      <rect x="0" y="6" width="104" height="4" fill="#ffffff" rx="2" opacity="0.9" />
+      <circle cx="0" cy="8" r="2.5" fill="#ffffff">
+        <animate attributeName="cx" values="0; 104; 0" dur="4.4s" repeatCount="indefinite" calcMode="linear" />
+      </circle>
     </g>
 
     <!-- Bar 03: TYPESCRIPT / WEB -->
@@ -103,9 +140,10 @@
       <text x="0" y="0" class="mono bar-lbl">TYPESCRIPT / NEXT.JS / REACT</text>
       <text x="372" y="0" class="mono bar-pct" text-anchor="end">22%</text>
       <rect x="0" y="6" width="372" height="4" fill="#141414" rx="2" />
-      <rect x="0" y="6" width="0" height="4" fill="#ffffff" rx="2">
-        <animate attributeName="width" values="0; 82" dur="2.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" />
-      </rect>
+      <rect x="0" y="6" width="82" height="4" fill="#ffffff" rx="2" opacity="0.9" />
+      <circle cx="0" cy="8" r="2.5" fill="#ffffff">
+        <animate attributeName="cx" values="0; 82; 0" dur="4.8s" repeatCount="indefinite" calcMode="linear" />
+      </circle>
     </g>
 
     <!-- Bar 04: JAVA / SPRING -->
@@ -113,9 +151,10 @@
       <text x="0" y="0" class="mono bar-lbl">JAVA / SPRING BOOT</text>
       <text x="372" y="0" class="mono bar-pct" text-anchor="end">12%</text>
       <rect x="0" y="6" width="372" height="4" fill="#141414" rx="2" />
-      <rect x="0" y="6" width="0" height="4" fill="#ffffff" rx="2">
-        <animate attributeName="width" values="0; 45" dur="2.4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" />
-      </rect>
+      <rect x="0" y="6" width="45" height="4" fill="#ffffff" rx="2" opacity="0.9" />
+      <circle cx="0" cy="8" r="2.5" fill="#ffffff">
+        <animate attributeName="cx" values="0; 45; 0" dur="5.2s" repeatCount="indefinite" calcMode="linear" />
+      </circle>
     </g>
 
     <!-- Bar 05: DATA & STORAGE -->
@@ -123,9 +162,10 @@
       <text x="0" y="0" class="mono bar-lbl">POSTGRESQL / SQL / STORAGE</text>
       <text x="372" y="0" class="mono bar-pct" text-anchor="end">6%</text>
       <rect x="0" y="6" width="372" height="4" fill="#141414" rx="2" />
-      <rect x="0" y="6" width="0" height="4" fill="#ffffff" rx="2">
-        <animate attributeName="width" values="0; 24" dur="2.6s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" />
-      </rect>
+      <rect x="0" y="6" width="24" height="4" fill="#ffffff" rx="2" opacity="0.9" />
+      <circle cx="0" cy="8" r="2.5" fill="#ffffff">
+        <animate attributeName="cx" values="0; 24; 0" dur="5.6s" repeatCount="indefinite" calcMode="linear" />
+      </circle>
     </g>
   </g>
 </svg>

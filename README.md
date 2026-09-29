@@ -1,13 +1,13 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-dark.svg" width="100%" alt="ARDS — AI Engineer / System Builder">
+  <img src="./assets/hero-dark.svg" width="100%" alt="RAYMUND GERARD ESTACA — Full Stack AI Assisted Developer">
 </picture>
 
 <div align="center">
 
-[![Release](https://img.shields.io/badge/RELEASE-v3.1.0-000000?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RaymundGerardReyes/RaymundGerardReyes/releases/tag/v3.1.0)
-[![Changelog](https://img.shields.io/badge/CHANGELOG-v3.1.0-000000?style=for-the-badge&logo=markdown&logoColor=white)](./CHANGELOG.md)
+[![Release](https://img.shields.io/badge/RELEASE-v3.2.0-000000?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RaymundGerardReyes/RaymundGerardReyes/releases/tag/v3.2.0)
+[![Changelog](https://img.shields.io/badge/CHANGELOG-v3.2.0-000000?style=for-the-badge&logo=markdown&logoColor=white)](./CHANGELOG.md)
 [![Theme](https://img.shields.io/badge/THEME-ADAPTIVE%20CONTAINERS-000000?style=for-the-badge)](./VERSION)
 
 </div>
@@ -68,5 +68,5 @@ A static, production-verified system inventory categorized by architectural laye
 ---
 
 <div align="center">
-  <sub>ARDS &middot; RAYMUND GERARD REYES &middot; RELEASE v3.1.0 &middot; THEME-ADAPTIVE COMPUTATIONAL MINIMALISM</sub>
+  <sub>RAYMUND GERARD ESTACA &middot; RELEASE v3.2.0 &middot; THEME-ADAPTIVE COMPUTATIONAL MINIMALISM</sub>
 </div>
