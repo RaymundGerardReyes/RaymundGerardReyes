@@ -2,6 +2,14 @@
   <img src="./assets/hero.svg" width="100%" alt="ARDS — AI Engineer / System Builder" />
 </p>
 
+<div align="center">
+
+[![Release](https://img.shields.io/badge/RELEASE-v3.0.0-000000?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RaymundGerardReyes/RaymundGerardReyes/releases/tag/v3.0.0)
+[![Changelog](https://img.shields.io/badge/CHANGELOG-v3.0.0-000000?style=for-the-badge&logo=markdown&logoColor=white)](./CHANGELOG.md)
+[![Spec](https://img.shields.io/badge/SPEC-2026.02-000000?style=for-the-badge)](./VERSION)
+
+</div>
+
 ## 01 / ENGINEERING FOCUS
 
 <p align="center">
@@ -54,5 +62,5 @@ A static, production-verified system inventory categorized by architectural laye
 ---
 
 <div align="center">
-  <sub>ARDS &middot; RAYMUND GERARD REYES &middot; SPECIFICATION 2026.02 &middot; MONOCHROME COMPUTATIONAL MINIMALISM</sub>
+  <sub>ARDS &middot; RAYMUND GERARD REYES &middot; RELEASE v3.0.0 &middot; SPECIFICATION 2026.02 &middot; MONOCHROME COMPUTATIONAL MINIMALISM</sub>
 </div>
